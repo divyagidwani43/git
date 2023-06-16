@@ -1,0 +1,57 @@
+git remote add new_repo https://github.com/divyagidwani43/new-repo
+   to add repo
+
+git branch
+   to create a branch
+
+git push origin branch_name
+   to push a branch
+   changes made wont be saved in repo unless we use commit and 
+   changes made when in branch 2 wont be in branch 1 unless use merge
+
+git pull origin branch_name
+   to update in pc files the changes made in github
+
+git branch --set-upstream-to=origin/master master
+   to just use git pull and not mention origina nd branch name everytime
+
+git checkout second_branch_name
+   to change between branches
+
+git branch -D branch_name
+   to deleet branches 
+
+git checkout --track origin/branchnamemadeinrepo
+   to pull branch created in repo and switch to that branch
+git pull origin feature2
+   to pull all contents
+
+git merge branch_to_be_merged
+      dg530@divya MINGW64 ~/desktop/new (master)
+   $ git log --oneline
+   b77fc37 (HEAD -> master, origin/master) Create code.js
+   09b9922 Update index.html
+   2bc34c0 new
+   c3752ba another commit
+   9cdf1d1 add js file
+   c732876 added heading
+   8a8b266 initial comment
+      dg530@divya MINGW64 ~/desktop/new (master)
+   $ git merge feature_1
+   Updating b77fc37..349e206
+   Fast-forward
+   style.css | 3 +++
+   1 file changed, 3 insertions(+)
+      dg530@divya MINGW64 ~/desktop/new (master)
+   $ git log --oneline
+   349e206 (HEAD -> master, origin/feature_1, feature_1) color
+   b77fc37 (origin/master) Create code.js
+   09b9922 Update index.html
+   2bc34c0 new
+   c3752ba another commit
+   9cdf1d1 add js file
+   c732876 added heading
+   8a8b266 initial comment
+
+in merge conflicts 
+git merge --abort to eliminate

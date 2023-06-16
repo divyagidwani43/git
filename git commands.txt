@@ -1,0 +1,96 @@
+git init 
+   to create a new repo in the folder you are 
+
+git commit -m "intial comment" 
+   can be more than one 
+   "intial comment" is the commit message that'll show in log 
+   to commit a repo
+git commit
+   will open a editor I to insert Q to exit
+git commit -am "message"
+
+git config user.name/user.email user_name/user_email 
+   to register urslf as user to use git commit -m "intial comment" 
+
+git config user.name/user.email 
+   check using the same 
+
+git status 
+   to check which are commited which are not
+   when u make any change in files already committed they uncommit on their own and u need  
+   to commit them again
+
+git add file_name 
+   to commit a non commit file
+   u can add file directly in folder it will be prensent in repo but untracked
+
+git add . 
+   to commit all files in repo
+
+git log 
+   to show all history of commits date time and author 
+git log --oneline
+   to present in one line
+git log --oneline
+   c3752ba (HEAD -> master) another commit
+   (head shows points to the latest commit made )(master shows the branch)
+   9cdf1d1 add js file
+   c732876 added heading
+   8a8b266 initial comment
+
+
+git show HEAD
+   to show the latest commit ie another commit in log
+git show HEAD~1
+   to show the latest commit ie add js file in log
+
+git config --global core.editor "code -- wait"
+   to set vsc as editor
+
+git checkout script.js
+   to undo the change made in script.js and if all changes are undo it will go in commit if 
+   it was there before all changes
+git checkout *
+   undos all changes made and moves file to commit if they wre there before
+
+git checkout c732876
+   will get us back on this branch of added heading any files made after will not be 
+   editable and all the changes made after that wont be present
+   git log --oneline
+   c732876 (HEAD) added heading
+   8a8b266 initial comment
+   u cam edit files here but cant add new commits they'll disappear once we got o master 
+   branch
+git checkout master
+   to go to mastre branch
+
+git revert c732876
+
+git reset c3752ba
+   to del commits after c3752ba another commit and changes made in commit after wont undo 
+   but be unstaged 
+   $ git log --oneline
+   877b145 (HEAD -> master) hi
+   6aaad25 Revert "added heading"
+   c3752ba another commit
+   9cdf1d1 add js file
+   c732876 added heading
+   8a8b266 initial comment
+   git reset c3752ba
+   Unstaged changes after reset:
+   M       dii.html
+   M       script.js
+   M       style.css
+   git log --oneline
+   c3752ba (HEAD -> master) another commit
+   9cdf1d1 add js file
+   c732876 added heading
+   8a8b266 initial comment
+
+git reset --hard 34e8319
+   to del data changes as well
+use git clean -xfd after to del data
+
+.gitignore
+   create this file and add /1.txt to ignore 1.txt file
+   

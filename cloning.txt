@@ -1,0 +1,5 @@
+git clone link_to_clone
+   to get all files copied from a repo as well as commit 
+
+
+

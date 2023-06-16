@@ -1,0 +1,27 @@
+TERMINAL COMMANDS
+pwd for checking which directory are we on i.e which place or folder can we edit
+
+cd to get to another location eg desktop or folder 3 from folder 1 only
+cd dg530/desktop/experiment full tp jump into folders like to get to folder 4 from desktop 
+
+
+mkdir name_of_folder to create a folder
+
+cd .. to go back to previous location
+cd ../.. to go back 2 steps
+
+
+touch to create a file
+touch new_folder/rtt.ppt to create file in new_folder
+
+ls to know what files we have if in foler 1 we have 2file and folder3  (has folder4) we can see what files in folder 3 but if in folder 3 we cant see files in folder 1 and when in folder 1 we cant see folder 4 (only in folder 3)
+
+mv to rename the file
+
+cp to copy
+
+rm to delete a file
+rm - rf to delete folder
+
+code 
+to open vsc
